@@ -1,0 +1,85 @@
+.hero {
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.plato-wrapper {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.plato {
+    width: 120px;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.plato-circle {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    border-radius: 0 0 60% 60%;
+    transform: translate(0, -45%);
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+
+}
+
+.heroTitle {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 400px;
+}
+
+.heroContent > button {
+    background-color: var(--blackColor);
+    color: aliceblue;
+    padding: 0.75em 1.5em;
+    border-radius: 20px;
+    width: fit-content;
+    border: 1px solid var(--blackColor);
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.leftF {
+    width: 128px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    z-index: -1;
+    transform: rotate(27deg) translate(-10%, 30%);
+}
+
+.rightF {
+    width: 118px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: -1;
+    transform: rotate(-27deg) translate(10%, 27%);
+}
+
+.logoB {
+    position: absolute;
+    top: 0;
+}
+
+.heroContent > button:hover {
+    cursor: pointer;
+    background: rgb(204, 180, 113);
+    color: var(--blackColor);
+    border: 1px solid var(--blackColor);
+    scale: 1.025;
+}
